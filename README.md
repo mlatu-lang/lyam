@@ -4,7 +4,7 @@
 
 Welcome to **Learn You a Mlatu for Great Good!** If you're reading this, chances are you want to learn Mlatu. Well you've come to the right place.
 
-**Learn You a Mlatu for Great Good!** is unabashedly copied off of [Learn You a Haskell for Great Good]. This tutorial assumes you have some experience programming in an imperative programming language. If you have experience in a concatenative programming language or a functional programming language, good for you! You'll have an easier time, and should be able to follow along fairly easily.
+**Learn You a Mlatu for Great Good!** is unabashedly copied off of [Learn You a Haskell for Great Good](https://learnyouahaskell.com/). This tutorial assumes you have some experience programming in an imperative programming language. If you have experience in a concatenative programming language or a functional programming language, good for you! You'll have an easier time, and should be able to follow along fairly easily.
 
 ### So what's Mlatu?
 
@@ -16,7 +16,7 @@ Mlatu is **statically typed**. When you compile your program, the compiler knows
 
 Mlatu is **elegant and concise**. Because it uses a lot of high level concepts, Mlatu prograams are usually shorter than imperative equivalents. And shorter programs are easier to maintain than longer ones and have less bugs.
 
-### What you need to dive in
+### What you need to dive in
 
 A text editor, the Mlatu compiler, and an Erlang compiler. You probably already have your favorite text editor installed so we won't waste time on that. The easiest way to install Mlatu is to download a binary from the lastest nightly release, available [here](https://github.com/brightly-salty/mlatu/releases). The Mlatu compiler turns Mlatu programs into Erlang programs, so you will need `erlc` and `escript` to be able to run the output of the Mlatu compiler. You can install Erlang/OTP by following the instructions [here](https://erlang.org/doc/installation_guide/users_guide.html).
 
@@ -26,7 +26,7 @@ Throughout this tutorial, we will use `mlatu script INPUT` which allows you to r
 
 ## Starting out
 
-### Ready set, go!
+### Ready set, go!
 
 Alright, let's get started! If you're the sort of horrible person who doesn't read introductions to things and you skipped it, you might want to read the last section in the introduction anyway because it explains what you need to follow this tutorial.
 
