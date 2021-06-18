@@ -92,7 +92,7 @@ input:1.3-10
 I want to match the type "char list" with the type "nat" but I am not able to.
 ```
 
-What the compiler is telling us here is that `"llama"` is not a number and so it doesn't know how to add it to 5. Even if it wasn't `"llama"` but `"four"` or `"4"`, Mlatu still wouldn't consider it to be a number. `+` expects both its inputs to be numbers. If we tried to do `true eq 5`, the mlatu compiler would tell us that the types don't match. Whereas `+` works only on numbers, `eq` works on any two things that can be compared. But the catch is that they both have to be the same type. You can't compare apples and oranges. We'll take a closer look at types a bit later.
+What the compiler is telling us here is that `"llama"` is not a number and so it doesn't know how to add it to 5. Even if it wasn't `"llama"` but `"four"` or `"4"`, Mlatu still wouldn't consider it to be a number. `+` expects both its inputs to be numbers. If we tried to do `true 5 eq`, the mlatu compiler would tell us that the types don't match. Whereas `+` works only on numbers, `eq` works on any two things that can be compared. But the catch is that they both have to be the same type. You can't compare apples and oranges. We'll take a closer look at types a bit later.
 
 You may not have known it but we've been using functions now all along. For instance, `*` is a function that takes two numbers and multiplies them. In other programming languages, these operators are infix functions, called like `1 * 5`. But in Mlatu, operators are no different than other functions, and are postfix.
 
