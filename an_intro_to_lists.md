@@ -17,7 +17,7 @@ $ mlatu script "[4, 8, 15, 16, 23, 42]"
 [4, 8, 15, 16, 23, 42]
 ```
 
-As you can see, lists are denoted by square brackets and the values in the lists are separated by commas. If we tried a list like `[1,2,'a',3,'b','c',4]` Mlatu would complain that characters (which are, by the way, denoted as a character between single quotes) are not numbers. Speaking of characters, strings are just lists of characters. `"hello"` is just syntactic sugar for `['h', 'e', 'l', 'l', 'o']`. Because strings are lists, we can use list functions on them, which is really andy.
+As you can see, lists are denoted by square brackets and the values in the lists are separated by commas. If we tried a list like `[1,2,'a',3,'b','c',4]` Mlatu would complain that characters (which are, by the way, denoted as a character between single quotes) are not numbers. Speaking of characters, strings are just lists of characters. `"hello"` is just syntactic sugar for `['h', 'e', 'l', 'l', 'o']`. Because strings are lists, we can use list functions on them, which is really handy.
 
 A common task is putting two lists together. This is done by using the `append` function.
 
@@ -30,7 +30,7 @@ $ mlatu script "['w', 'o'] ['o', 't'] append"
 "woot"
 ```
 
-Watch out when repeatedly using the `append` function on long strings. WHen you put together two lists (even if you append a single element to a list, for instance: `[1,2,3] [4] append`), internally, Mlatu has to walk through the whole list of the leftmost parameter of `append`. That's not a problem when dealing with lists that aren't too big. But putting something at the end of a list that's fifty million entries long is going to take a while. However putting something at the beginning of a list using the `cons` function is instantaneous.
+Watch out when repeatedly using the `append` function on long strings. When you put together two lists (even if you append a single element to a list, for instance: `[1,2,3] [4] append`), internally, Mlatu has to walk through the whole list of the leftmost parameter of `append`. That's not a problem when dealing with lists that aren't too big. But putting something at the end of a list that's fifty million entries long is going to take a while. However putting something at the beginning of a list using the `cons` function is instantaneous.
 
 ```shell
 $ mlatu script "'A' \" SMALL CAT\" cons"
