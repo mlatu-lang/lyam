@@ -50,16 +50,16 @@ false
 Testing for equality is done like so. (Note that we have to escape the quotation mark when using `mlatu script`)
 
 ```shell
-$ mlatu script "false"
-ipt "5 5 eq"
+$ mlatu script "5 5 eq"
 true
-$ mlatu script " 1 0 eq"
+$ mlatu script "1 0 eq"
 false 
 $ mlatu script "5 5 neq"
 false 
 $ mlatu script "5 4 neq"
 true
 $ mlatu script "\"hello\" \"hello\" eq" 
+true
 ```
 
 What about doing `5 "llama" +` or `5 true eq`? Well, if we try the first snippet, we get a scary error message!
