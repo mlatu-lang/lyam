@@ -50,16 +50,16 @@ false
 Testing for equality is done like so. (Note that we have to escape the quotation mark when using `mlatu script`)
 
 ```shell
-$ mlatu script "false"
-ipt "5 5 eq"
+$ mlatu script "5 5 eq"
 true
-$ mlatu script " 1 0 eq"
+$ mlatu script "1 0 eq"
 false 
 $ mlatu script "5 5 neq"
 false 
 $ mlatu script "5 4 neq"
 true
 $ mlatu script "\"hello\" \"hello\" eq" 
+true
 ```
 
 What about doing `5 "llama" +` or `5 true eq`? Well, if we try the first snippet, we get a scary error message!
@@ -90,4 +90,4 @@ $ mlatu script "100 101 max"
 101
 ```
 
-Lots of people who come from imperative languages tend to stick to the notion that parentheses should denote function application. For example, in C, you use parentheses to call functions like `foo()`, `bar(1)`, or `baz(3, "haha")`. Like we said, spaces are used for function applicaation in Mlatu. So those functions in Mlatu would be `foo`, `1 bar`, and `"haha" 3 baz`.
+Lots of people who come from imperative languages tend to have the notion that parentheses should denote function application. For example, in C, you use parentheses to call functions like `foo()`, `bar(1)`, or `baz(3, "haha")`. As mentioned earlier, spaces are used for function application in Mlatu. So those functions in Mlatu would be `foo`, `1 bar`, and `"haha" 3 baz`.
